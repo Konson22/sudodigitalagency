@@ -3,28 +3,18 @@
 @tailwind utilities;
 @tailwind variants;
 
-/* @font-face {
-  font-family: 'BrandierTrial';
-  font-style: normal;
-  font-weight: normal;
-  src: local('BrandierTrial'), url('./assets/fonts/Bestie.otf') format('woff');
-}
-
 @font-face {
-  font-family: 'BrandierTrial';
-  font-style: normal;
-  font-weight: normal;
-  src: local('BrandierTrial'), url('./assets/fonts/Kodchasan/Kodchasan-Bold.ttf') format('woff');
-  src: local('BrandierTrial'), url('./assets/fonts/Poppins/Poppins-Regular.ttf') format('woff');
-  src: local('BrandierTrial'), url('./assets/fonts/line-awesome-1.3.0/fonts/la-brands-400.ttf') format('woff');
-} */
+  font-family: custom-font;
+  font-weight: 300;
+  /* src: url("./assets/fonts/Be_Vietnam/BeVietnam-Bold.ttf"); */
+  src: url("./assets/fonts/Kodchasan/Kodchasan-Medium.ttf");
+}
 
 body {
   scroll-behavior: smooth;
-}
-
-#image {
-  visibility: hidden;
+  background-color: rgb(91, 207, 34);
+  background-color: rgb(209, 221, 209);
+  font-family: 'custom-font';
 }
 
 img {
@@ -32,132 +22,24 @@ img {
   height: 100%;
 }
 
-.pinksvg {
-  background-image: url('./assets/images/bg.svg');
-  color: rgb(165, 78, 43);
-}
-
-.redsvg {
-  background-image: url("./assets/images/redsvg.svg");
-}
-
-
 .header-container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('./assets/images/pexels-meruyert-gonullu-6161672.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/pexels-christina-morillo-1181244.jpg');
   background-size: cover;
-  /* background-position: right; */
-}
-
-.header-text {
-  background-image: url('./assets/images/wave-1.svg');
-  background-image: linear-gradient(rgb(155, 112, 191), rgb(191, 112, 151));
-  background-size: cover;
-  background-position: right;
-}
-
-.image-container {
-  background-image:
-    url('./assets/images/products/WhatsApp Image 2023-10-23 at 14.05.04.jpeg');
-  background-size: cover;
-  background-size: 100% 100%;
-}
-
-
-.login-container {
-  background-image: linear-gradient(rgba(124, 89, 80, 0.2), rgba(124, 89, 80, 0.1)),
-    url('./assets/images/offer.jpg');
-  background-size: cover;
-  background-position: right;
-}
-
-.visit-use-section-container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('./assets/images/offer.jpg');
-  background-size: cover;
-  background-size: 100% 100%;
+  background-position: center;
 }
 
 .message-style {
   clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 60% 95%, 50% 100%, 40% 95%, 0 95%);
 }
 
-.promotion-container {
-  background-image: linear-gradient(rgba(124, 89, 80, 0.2), rgba(124, 89, 80, 0.1)),
-    url('./assets/images/offer.jpg');
-  background-size: cover;
-  background-position: right;
+.green-clip {
+  clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
 }
 
-.form-sidebar {
-  background-image: linear-gradient(rgba(124, 89, 80, 0.2), rgba(124, 89, 80, 0.1)),
-    url('./assets/images/offer.jpg');
-  background-size: cover;
-  background-position: center;
+.black-clip {
+  clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
 }
 
-
-.footer {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url('./assets/images/offer.jpg');
-  background-size: cover;
-  background-position: center;
-}
-
-
-.grad {
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.grad1 {
-  background-image: linear-gradient(rgb(120, 5, 53), rgb(229, 160, 1));
-}
-
-.grad2 {
-  background-image: linear-gradient(rgb(71, 106, 255), rgb(2, 189, 255));
-}
-
-.grad3 {
-  background-image: linear-gradient(170deg, rgb(123, 9, 113), rgb(124, 6, 238));
-}
-
-.grad4 {
-  background-image: linear-gradient(rgb(3, 177, 239), rgb(5, 245, 160));
-}
-
-.loader {
-  background-color: aqua;
-  transition: all;
-}
-
-.l1 {
-  animation: animate 1s 0.1s infinite alternate-reverse;
-}
-
-.l2 {
-  animation: animate 1s 0.4s infinite alternate-reverse;
-}
-
-.l3 {
-  animation: animate 1s 0.5s infinite alternate-reverse;
-}
-
-.l4 {
-  animation: animate 1s 0.6s infinite alternate-reverse;
-}
-
-@keyframes animate {
-  0% {
-    background-color: rgb(155, 112, 191);
-  }
-
-  100% {
-    background-color: rgb(212, 190, 230);
-    transform: translateY(5px);
-  }
-}
-
-.hide {
-  transform: translateX(-100%);
+.hexa-clip {
+  clip-path: polygon(25% 0, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }

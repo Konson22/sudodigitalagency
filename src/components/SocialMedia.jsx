@@ -1,20 +1,31 @@
-import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaTwitter,
+  FaWhatsapp,
+  FaYoutube,
+} from "react-icons/fa";
 
-export default function SocialMedia() {
+export default function SocialMedia({ cName = "md:hidden block" }) {
   return (
-    <div className="md:px-4">
-      <h3 className="text-2xl text-center mb-4">follow us</h3>
-      <div className="md:bg-transparent bg-white/50 py-4 rounded-md flex justify-evenly text-3xl">
-        <span className="bg-cl1 rounded-md p-2">
-          <FaFacebook />
-        </span>
-        <span className="bg-cl1 rounded-md p-2">
-          <FaInstagram />
-        </span>
-        <span className="bg-cl1 rounded-md p-2">
+    <div className={cName}>
+      <h2 className="md:text-4xl text-2xl md:text-left text-center mb-3">
+        Follow us on
+      </h2>
+      <div className="flex justify-between bg-greenbg/50 border border-greenbg rounded-md md:p-0 p-4">
+        <span className="md:text-4xl text-2xl bg-darkbd border border-greenbg md:text-white text-greenbg rounded-full p-2">
           <FaTwitter />
         </span>
-        <span className="bg-cl1 rounded-md p-2">
+        <span className="md:text-4xl text-2xl bg-darkbd border border-greenbg md:text-white text-greenbg rounded-full p-2">
+          <FaInstagram />
+        </span>
+        <span className="md:text-4xl text-2xl bg-darkbd border border-greenbg md:text-white text-greenbg rounded-full p-2">
+          <FaFacebook />
+        </span>
+        <span className="md:text-4xl text-2xl bg-darkbd border border-greenbg md:text-white text-greenbg rounded-full p-2">
+          <FaYoutube />
+        </span>
+        <span className="md:text-4xl text-2xl bg-darkbd border border-greenbg md:text-white text-greenbg rounded-full p-2">
           <FaWhatsapp />
         </span>
       </div>
