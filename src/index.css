@@ -32,14 +32,8 @@ img {
   clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 60% 95%, 50% 100%, 40% 95%, 0 95%);
 }
 
-.green-clip {
-  clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
-}
 
 .black-clip {
-  clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
-}
-
-.hexa-clip {
-  clip-path: polygon(25% 0, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  /* clip-path: polygon(0 0, 50% 0%, 0 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%); */
 }

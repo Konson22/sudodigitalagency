@@ -1,14 +1,21 @@
 export default function OurApprocachSection() {
   return (
     <div className="md:px-[10%] px-4 md:-mt-24 -mt-16">
-      <div className="grid md:grid-cols-4 grid-cols-1 gap-3 mt6">
+      <div className="bg-white rounded shadow p-8">
+        <h3 className="text-2xl">{data[2].title}</h3>
+        <p>
+          {data[2].text}
+          {data[1].text}
+        </p>
+      </div>
+      {/* <div className="grid md:grid-cols-4 grid-cols-1 gap-3 mt6">
         {data.map((info, index) => (
           <div className="bg-white rounded-xl shadow-md p-5" key={index}>
             <h3 className="text-2xl">{info.title}</h3>
             <p>{info.text}</p>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }

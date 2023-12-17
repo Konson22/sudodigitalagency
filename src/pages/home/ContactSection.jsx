@@ -9,10 +9,10 @@ export default function ContactSection() {
         <div className="flex-1 mr-8">
           <h2 className="text-4xl mb-2">Let's get in touch</h2>
           <p>
-            we are a passionate team of creative minds specializing in web,
-            mobile app, and graphic design. Our mission is to transform your
-            ideas into stunning digital experiences that captivate and engage
-            your audience.
+            Let Sudo Agency be your trusted partner in elevating your digital
+            presence and creating memorable experiences for your audience. Get
+            in touch with us today to discuss your next design project and let's
+            embark on a journey of innovation together!
           </p>
           <SocialMedia cName="md:block hidden mt-7" />
         </div>

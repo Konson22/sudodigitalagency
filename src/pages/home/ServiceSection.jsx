@@ -12,7 +12,7 @@ export default function ServiceSection() {
       <div className="grid md:grid-cols-3 grid-cols-1 md:gap-6 gap-4">
         {services.map((service, index) => (
           <div className="bg-white p-7 rounded-md" key={index}>
-            <div className="h-[120px] w-[120px] rounded-full mx-auto">
+            <div className="md:h-[120px] h-[160px]">
               <img className="" src={service.image} alt="" />
             </div>
             <p className="text-center">
@@ -39,7 +39,7 @@ const services = [
   {
     title: "Social media advertisement",
     text: "",
-    image: process.env.PUBLIC_URL + "/images/ux.png",
+    image: process.env.PUBLIC_URL + "/images/social.jpg",
   },
   {
     title: "App Development",
