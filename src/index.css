@@ -12,8 +12,6 @@
 
 body {
   scroll-behavior: smooth;
-  background-color: rgb(91, 207, 34);
-  background-color: rgb(209, 221, 209);
   font-family: 'custom-font';
 }
 
@@ -36,4 +34,12 @@ img {
 .black-clip {
   /* clip-path: polygon(0 0, 50% 0%, 0 100%, 0% 100%);
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%); */
+}
+
+.open {
+  clip-path: polygon(100% 0, 100% 52%, 100% 100%, 0 100%, 0 0);
+}
+
+.close {
+  clip-path: polygon(80% 0, 41% 75%, 61% 100%, 0 100%, 0 0);
 }

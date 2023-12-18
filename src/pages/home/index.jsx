@@ -3,6 +3,7 @@ import Header from "./Header";
 import OurApprocachSection from "./OurApprocachSection";
 import ServiceSection from "./ServiceSection";
 import TestimonialSection from "./TestimonialSection";
+import WhyUsSection from "./WhyUsSection";
 
 export default function HomePage() {
   return (
@@ -20,6 +21,7 @@ export default function HomePage() {
       </div>
       <OurApprocachSection />
       <ServiceSection />
+      <WhyUsSection />
       <TestimonialSection />
       <ContactSection />
       <div className=""></div>

@@ -54,17 +54,17 @@ export default function TestimonialSection() {
 const data = [
   {
     name: "James Dut",
-    text: "we are a passionate team of creative minds specializing in web, mobile app, and graphic design. Our mission is to transform your ideas into stunning digital experiences",
+    text: "Working with Sudo Digital Agency was a game-changer for our business. Their expertise in web development gave us a site that not only looks fantastic but also functions seamlessly. The social media strategies they implemented significantly boosted our online presence. Sudo truly understands the digital landscape, and their team's dedication is commendable. Highly recommended!",
     image: process.env.PUBLIC_URL + "/images/Image-1.png",
   },
   {
     name: "Suzy John",
-    text: "we are a passionate team of creative minds specializing in web, mobile app, and graphic design. Our mission is to transform your ideas into stunning digital experiences",
+    text: "Working with Sudo Digital Agency was a game-changer for our business. Their expertise in web development gave us a site that not only looks fantastic but also functions seamlessly. The social media strategies they implemented significantly boosted our online presence. Sudo truly understands the digital landscape, and their team's dedication is commendable. Highly recommended!",
     image: process.env.PUBLIC_URL + "/images/Image-2.png",
   },
   {
     name: "Aliz MArtin",
-    text: "we are a passionate team of creative minds specializing in web, mobile app, and graphic design. Our mission is to transform your ideas into stunning digital experiences",
+    text: "Working with Sudo Digital Agency was a game-changer for our business. Their expertise in web development gave us a site that not only looks fantastic but also functions seamlessly. The social media strategies they implemented significantly boosted our online presence. Sudo truly understands the digital landscape, and their team's dedication is commendable. Highly recommended!",
     image: process.env.PUBLIC_URL + "/images/Image-3.png",
   },
   {
