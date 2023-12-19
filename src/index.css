@@ -4,15 +4,27 @@
 @tailwind variants;
 
 @font-face {
-  font-family: custom-font;
+  font-family: Kodchasan;
   font-weight: 300;
-  /* src: url("./assets/fonts/Be_Vietnam/BeVietnam-Bold.ttf"); */
-  src: url("./assets/fonts/Kodchasan/Kodchasan-Medium.ttf");
+  src: url("./assets/fonts/Kodchasan/Kodchasan-Regular.ttf");
+}
+
+@font-face {
+  font-family: Kodchasan-Bold;
+  font-weight: 300;
+  src: url("./assets/fonts/Kodchasan/Kodchasan-Bold.ttf");
 }
 
 body {
   scroll-behavior: smooth;
-  font-family: 'custom-font';
+  font-family: 'Kodchasan';
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Kodchasan-Bold';
 }
 
 img {
@@ -26,20 +38,23 @@ img {
   background-position: center;
 }
 
-.message-style {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 60% 95%, 50% 100%, 40% 95%, 0 95%);
+.social-media {
+  background-size: cover;
+  background-position: center;
 }
 
-
-.black-clip {
-  /* clip-path: polygon(0 0, 50% 0%, 0 100%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%); */
+.social-media1 {
+  background-image: url('./assets/images/gadgets-g08068e9d5_1280.jpg');
 }
 
-.open {
-  clip-path: polygon(100% 0, 100% 52%, 100% 100%, 0 100%, 0 0);
+.social-media2 {
+  background-image: url('./assets/images/pexels-pixabay-38544.jpg');
 }
 
-.close {
-  clip-path: polygon(80% 0, 41% 75%, 61% 100%, 0 100%, 0 0);
+.social-media3 {
+  background-image: url('./assets/images/pexels-christina-morillo-1181244.jpg');
+}
+
+.social-media4 {
+  background-image: url('./assets/images/money-gcbbbadce1_12802.jpg');
 }

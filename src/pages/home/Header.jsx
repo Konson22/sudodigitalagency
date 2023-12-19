@@ -1,63 +1,63 @@
-import { useRef } from "react";
-import Carousel from "react-elastic-carousel";
-import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { motion } from "framer-motion";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export default function Header() {
-  const carouselRef = useRef();
-
   return (
-    <div className="header-container flex items-center md:h-[75vh] md:px-[8%] md:py-0 py-16">
-      <button
-        className="md:text-2xl text-2xl text-white hover:bg-greenbg/30"
-        onClick={() => carouselRef.current.slidePrev()}
-      >
-        <FiChevronLeft />
-      </button>
-      <Carousel
-        className="overflow-hidde z-20"
-        ref={carouselRef}
-        showArrows={false}
-        outerSpacing={0}
-        pagination={false}
-        enableAutoPlay={true}
-      >
-        {slogans.map((slogan) => (
-          <div className="md:w-[80%]">
-            <h1 className="md:text-6xl text-3xl font-bold text-greenbg mb-3">
-              {slogan.title}
-            </h1>
-            <h1 className="md:text-4xl text-white">{slogan.text}</h1>
-            <button className="bg-greenbg text-white px-5 py-2 rounded text-xl mt-5 text-whit">
-              {slogan.btnText}
-            </button>
+    <Carousel
+      showThumbs={false}
+      showStatus={false}
+      infiniteLoop
+      autoPlay
+      stopOnHover={true}
+    >
+      {slogans.map((slogan, index) => (
+        <motion.div
+          key={index}
+          className={`md:h-[70vh] h-[40vh] flex items-center px-[10%] social-media ${slogan.bg} text-white`}
+        >
+          <div className="md:w-[70%] w-full text-left">
+            <h2 className="md:text-5xl text-2xl">{slogan.text}</h2>
           </div>
-        ))}
-      </Carousel>
-      <button
-        className="md:text-2xl text-2xl text-white hover:bg-greenbg/30"
-        onClick={() => carouselRef.current.slideNext()}
-      >
-        <FiChevronRight />
-      </button>
-    </div>
+        </motion.div>
+      ))}
+    </Carousel>
   );
 }
 
 const slogans = [
   {
-    title: "Sudo Digital Agency",
-    text: `your trusted partner in elevating your digital presence and creating
-    memorable experiences for your audience.`,
-    btnText: "Get started",
+    text: "Seamless Spaces, Effortless Hosting: Where Your Ideas Take Flight.",
+    bg: "social-media1",
   },
   {
-    title: "Social media ads",
-    text: `Our mission is to transform your ideas into stunning digital experiences that captivate and engage your audience.`,
-    btnText: "Get started",
+    text: "Ignite Your Presence, Spark Conversations: Your Social Success Story Starts Here!",
+    bg: "social-media2",
   },
   {
-    title: "Web & mobile app developement",
-    text: `We understand that each business is unique, and we tailor our designs to match your specific requirements, branding, and target audience`,
-    btnText: "Get started",
+    text: "Designing Dreams, Building Brands: Your Website, Your Identity.",
+    bg: "social-media3",
+  },
+  {
+    text: "Domains that Define, Hosting that Delivers: Your Online Home, Perfected.",
+    bg: "social-media4",
   },
 ];
+/*
+
+Social Media Marketing:
+
+""
+"Connect. Engage. Succeed: Elevate Your Brand with Our Social Magic."
+"Beyond Clicks, Into Connections: Transforming Audiences into Advocates."
+Website Design:
+
+"Designing Dreams, Building Brands: Your Website, Your Identity."
+"Where Ideas Meet Interface: Crafting Digital Experiences That Captivate."
+"Code Craftsmanship, Design Wizardry: Websites Tailored for Your Success."
+Domain and Hosting Services:
+
+"Domains that Define, Hosting that Delivers: Your Online Home, Perfected."
+"Seamless Spaces, Effortless Hosting: Where Your Ideas Take Flight."
+"Unleash Your Online Potential: Domains, Hosting, Excellence – All in One."
+*/

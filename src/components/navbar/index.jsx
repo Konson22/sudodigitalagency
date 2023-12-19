@@ -22,7 +22,7 @@ export default function Navbar() {
 
   return (
     <div
-      className={`bg-darkbd text-white flex items-center justify-between py-2 px-[5%] sticky left-0 top-0 z-40`}
+      className={`bg-darkbg text-white flex items-center justify-between py-2 px-[5%] sticky left-0 top-0 z-40`}
     >
       <Logo />
       <MainNavbar />

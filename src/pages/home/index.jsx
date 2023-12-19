@@ -1,30 +1,21 @@
-import ContactSection from "./ContactSection";
+import AboutSection from "./AboutSection";
+import AchivementSection from "./AchivementSection";
+import BlogingSection from "./BlogingSection";
 import Header from "./Header";
-import OurApprocachSection from "./OurApprocachSection";
+import OurFeatureSection from "./OurFeatureSection";
 import ServiceSection from "./ServiceSection";
-import TestimonialSection from "./TestimonialSection";
-import WhyUsSection from "./WhyUsSection";
+import TestimonailSection from "./TestimonailSection";
 
-export default function HomePage() {
+export default function Home() {
   return (
     <div>
       <Header />
-      <div className="bg-greenbg text-white text-center md:px-[15%] px-5 md:pt-20 pt-6 md:pb-32 pb-24">
-        <h3 className="md:text-3xl text-xl font-bold">
-          Sudo Digital Agency your creative partner
-        </h3>
-        <p className="md:text-xl">
-          we are a passionate team of creative minds specializing in web, mobile
-          app, and graphic design. Our mission is to transform your ideas into
-          stunning digital experiences that captivate and engage your audience.
-        </p>
-      </div>
-      <OurApprocachSection />
       <ServiceSection />
-      <WhyUsSection />
-      <TestimonialSection />
-      <ContactSection />
-      <div className=""></div>
+      <AboutSection />
+      <OurFeatureSection />
+      <AchivementSection />
+      <TestimonailSection />
+      <BlogingSection />
     </div>
   );
 }

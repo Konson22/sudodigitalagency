@@ -1,136 +1,96 @@
 import { FaMapMarkerAlt, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import SocialMedia from "./SocialMedia";
-import { FiChevronDown, FiMail } from "react-icons/fi";
-import { Link } from "react-router-dom";
-import { faqData, navigationsLinksData } from "../assets/staticData";
-import { useState } from "react";
+import { FiMail } from "react-icons/fi";
+import { servicesData } from "../assets/staticData";
 
 export default function Footer() {
   return (
-    <footer className="bg-darkbd text-white pt-16">
-      <FaqContent cName="md:block hidden" />
-      <div className="md:px-[6%] px-4">
-        <SocialMedia />
-        <div className="md:flex justify-between">
-          <div className="flex-1 md:my-0 my-6">
-            <h3 className="text-2xl mb-3">About us</h3>
-            <p>
-              At Sudo Agency, we believe in the power of innovation and design
-              to transform businesses and create exceptional digital
-              experiences. Our dedicated team of skilled designers, developers,
-              and creatives work collaboratively to turn your ideas into reality
-              and help you achieve your goals.
-            </p>
+    <footer className="bg-darkbg text-gray-300 md:px-[5%] px-5 md:pt-20 pt-10">
+      <div className="md:flex mb-14">
+        <div className="flex-1 md:mr-10 md:mb-0 mb-10">
+          <div className="flex items-center">
+            <img
+              className="md:h-[3.5rem] h-[3rem] md:w-[3.5rem] w-[3rem]"
+              src={process.env.PUBLIC_URL + "/images/logo.jpg"}
+              alt=""
+            />
+            <div className="">
+              <span className="block md:text-xl text-greenbg">
+                Sudo Digital
+              </span>
+              <p className="text-white text-sm text-right">Agency</p>
+            </div>
           </div>
-          <FaqContent />
-          <div className="md:mx-14 md:my-0 my-6">
-            <h3 className="text-2xl">Quick links</h3>
-            <ul>
-              {navigationsLinksData.map((link) => (
-                <li>
-                  <Link className="py-3 block" to={link.path}>
-                    {link.text}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="">
-            <h3 className="text-2xl">Contacts & address</h3>
-            <ul className="mt-4">
-              <li className="flex items-center py-2">
-                <span className="border border-greenbg bg-greenbg/10 rounded-full p-2 mr-2">
-                  <FaMapMarkerAlt />
-                </span>
-                Juba market near etc
+          <p className="my-5">
+            Your online presence starts with a captivating website. Our
+            developers blend creativity with technical proficiency to build
+            websites that not only look stunning but
+          </p>
+          <SocialMedia />
+        </div>
+        <div className="">
+          <h3 className="text-white text-xl mb-2">Quick Contacts</h3>
+          <ul>
+            <li className="flex items-center py-2">
+              <span className="border-greenbg border rounded-full p-2 mr-4">
+                <FaMapMarkerAlt />
+              </span>
+              Juba Market, near SS Bank
+            </li>
+            <li className="flex items-center py-2">
+              <span className="border-greenbg border rounded-full p-2 mr-4">
+                <FaPhoneAlt />
+              </span>
+              +211920079070
+            </li>
+            <li className="flex items-center py-2">
+              <span className="border-greenbg border rounded-full p-2 mr-4">
+                <FaWhatsapp />
+              </span>
+              +211920079070
+            </li>
+            <li className="flex items-center py-2">
+              <span className="border-greenbg border rounded-full p-2 mr-4">
+                <FiMail />
+              </span>
+              info@sudodigitalagency.com
+            </li>
+          </ul>
+        </div>
+        <div className="md:mx-10 md:my-0 my-10">
+          <h3 className="text-white text-xl mb-2">Usefull Links</h3>
+          <ul>
+            <li className="py-2">About us</li>
+            <li className="py-2">Sudo Investors</li>
+            <li className="py-2">Our Clients</li>
+            <li className="py-2">Legal Information</li>
+            <li className="py-2">Portfolio</li>
+            <li className="py-2">Terms & Conditions</li>
+          </ul>
+        </div>
+        <div className="">
+          <h3 className="text-white text-xl mb-2">Services</h3>
+          <ul>
+            {servicesData.map((service, index) => (
+              <li className="mb-2" key={index}>
+                {service.title}
               </li>
-              <li className="flex items-center py-2">
-                <span className="border border-greenbg bg-greenbg/10 rounded-full p-2 mr-2">
-                  <FaPhoneAlt />
-                </span>
-                +211920079070
-              </li>
-              <li className="flex items-center py-2">
-                <span className="border border-greenbg bg-greenbg/10 rounded-full p-2 mr-2">
-                  <FaWhatsapp />
-                </span>
-                +211920079070
-              </li>
-              <li className="flex items-center py-2">
-                <span className="border border-greenbg bg-greenbg/10 rounded-full p-2 mr-2">
-                  <FiMail />
-                </span>
-                info@sudodigitalagency.com
-              </li>
-            </ul>
-          </div>
+            ))}
+          </ul>
         </div>
       </div>
-      <div className="md:flex justify-evenly items-center py-4">
-        <ul className="flex justify-center mt-3">
-          <li className="">Privacy</li>
-          <li className="border-x-2 border-greenbg mx-3 px-3">Policy</li>
-          <li className="">Privacy</li>
-        </ul>
-        <div className="text-center md:mt-0 mt-4">
-          &copy; copy right reserved for sudo digital agency{" "}
-          {new Date().getUTCFullYear()}
+      <div className="md:flex items-center md:justify-between justify-evenly border-t border-gray-400 py-10">
+        <div className="flex md:mb-0 mb-5">
+          <span className="">Privacy Polocy</span>
+          <span className="md:mx-5 mx-2 md:px-4 px-2 border-x">
+            Terms & Conditions
+          </span>
+          <span className="">Legal info</span>
+        </div>
+        <div className="text-center">
+          &copy; sudodigitalagency.com All rights reserved
         </div>
       </div>
     </footer>
-  );
-}
-
-function FaqContent({ cName = "md:hidden block" }) {
-  return (
-    <div className={`${cName} md:px-[15%]`}>
-      <div className="md:flex">
-        <div className="flex-1 md:mr-8 md:mb-0 mb-8">
-          <h3 className="text-2xl">Subcribe to our news</h3>
-          <div className="flex bg-white/90 rounded-md p-2 my-2">
-            <input
-              className="md:h-[2.9rem] h-[2.4rem] w-full bg-transparent border-none focus:border-none focus:outline-none px-4"
-              type="email"
-              placeholder="E-mail addess"
-            />
-            <button className="flex items-center bg-greenbg px-6 rounded-md">
-              Send
-            </button>
-          </div>
-          <p>
-            developers, and creatives work collaboratively to turn your ideas
-            into reality and help you achieve your goals.
-          </p>
-        </div>
-        <div className="flex-1">
-          <h3 className="text-2xl">FAQ</h3>
-          <div className="mt-3">
-            {faqData.map((faq) => (
-              <FaqCard data={faq} />
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function FaqCard({ data }) {
-  const [isOpen, setIsOpen] = useState(false);
-  return (
-    <div
-      className="bg-white/5 p-2 mb-2 rounded"
-      onClick={() => setIsOpen(!isOpen)}
-    >
-      <div className="flex items-center justify-between">
-        <span className="font-bold">{data.question}</span>
-        <FiChevronDown />
-      </div>
-      {isOpen && (
-        <div className="p-2">
-          <p>{data.text}</p>
-        </div>
-      )}
-    </div>
   );
 }

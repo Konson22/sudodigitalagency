@@ -1,4 +1,5 @@
 import { FaDollarSign } from "react-icons/fa"
+import { FiUsers } from "react-icons/fi";
 
 
 
@@ -50,7 +51,7 @@ export const whyChooseUseData = [
     {
         title:'Experienced Team',
         text:`Our team comprises experienced professionals who stay updated with the latest trends, technologies, and design principles, delivering top-notch solutions for your business.`,
-        icon:<FaDollarSign />
+        icon:<FiUsers />
     },
     // {
     //     title:'Client Collaboration',
@@ -69,28 +70,32 @@ export const whyChooseUseData = [
     },
 ]
 
-export const services = [
+export const servicesData = [
     {
-        title:'Social media advertisment',
+        title:'Web Design',
         text:''
     },
     {
-        title:'App development',
+        title:'Mobile App development',
         text:''
     },
     {
-        title:'Web developement',
+        title:'Digital Marketing',
         text:''
     },
     {
-        title:'SEO optimization',
+        title:'Custom App Development',
+        text:''
+    },
+    {
+        title:'SEO & Content Writing',
         text:''
     },
 ]
 
 export const navigationsLinksData = [
     { text: "Home", path: "/" },
-    { text: "Services", path: "/", sublinks: services },
+    { text: "Services", path: "/", sublinks: servicesData },
     { text: "About", path: "/" },
     { text: "Contacts", path: "/" },
 ];
@@ -122,3 +127,56 @@ export const faqData = [
     },
 ]
   
+const transition = {
+    duration: 0.5,
+}
+export const animateTopVariants = {
+    initial: {
+      opacity: 0,
+      y: 40,
+    },
+    animate: {
+      opacity: 1,
+      y: 0,
+      transition
+    },
+    exit: {
+      opacity: 0,
+      y: 40,
+      transition
+    },
+};
+
+export const animateLeftVariants = {
+    initial: {
+      opacity: 0,
+      x: -40,
+    },
+    animate: {
+      opacity: 1,
+      x: 0,
+      transition
+    },
+    exit: {
+      opacity: 0,
+      x: -40,
+      transition
+    },
+};
+
+export const animateRightVariants = {
+    initial: {
+      opacity: 0,
+      x: 40,
+    },
+    animate: {
+      opacity: 1,
+      x: 0,
+      transition
+    },
+    exit: {
+      opacity: 0,
+      x: 40,
+      transition
+    },
+};
