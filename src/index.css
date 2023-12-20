@@ -38,6 +38,11 @@ img {
   background-position: center;
 }
 
+.curve {
+  -webkit-clip-path: polygon(0 0, 100% 1%, 100% 95%, 50% 100%, 0 95%);
+  clip-path: polygon(0 0, 100% 1%, 100% 95%, 50% 100%, 0 95%);
+}
+
 .social-media {
   background-size: cover;
   background-position: center;
@@ -57,4 +62,32 @@ img {
 
 .social-media4 {
   background-image: url('./assets/images/money-gcbbbadce1_12802.jpg');
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container::after {
+  content: '';
+  width: 30%;
+  height: 30%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  border-top: 5px solid rgb(14, 250, 116);
+  border-right: 5px solid rgb(14, 250, 116);
+}
+
+.image-container::before {
+  content: '';
+  width: 30%;
+  height: 30%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  border-bottom: 5px solid red;
+  border-left: 5px solid red;
 }

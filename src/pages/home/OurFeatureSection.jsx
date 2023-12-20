@@ -34,12 +34,15 @@ export default function OurFeatureSection() {
         </div>
       </RevealInView>
       <RevealInView
-        cName="md:w-[45%] rounded-xl border-t-8 border-r-8 border-greenbg overflow-hidden p-3"
+        cName="md:w-[45%] image-container p-3 md:ml-14"
         variants={animateRightVariants}
       >
         <img
           className="rounded-xl"
-          src={process.env.PUBLIC_URL + "/images/pexels-ali-pazani-2777898.jpg"}
+          src={
+            process.env.PUBLIC_URL +
+            "/images/pexels-oladimeji-ajegbile-3314294.jpg"
+          }
           alt=""
         />
       </RevealInView>

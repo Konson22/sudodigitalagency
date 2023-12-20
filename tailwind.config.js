@@ -8,6 +8,9 @@ module.exports = {
       colors:{
         darkbg:'rgb(28, 36, 49)',
         greenbg:'rgb(14, 250, 116)',
+        bluebg:'#4F98CA',
+        yellowgreenbg:'#A7D129',
+        lightgreenbg:'#7FDA89',
       }
     },
   },

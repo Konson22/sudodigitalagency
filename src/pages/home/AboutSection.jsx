@@ -11,7 +11,7 @@ export default function AboutSection() {
     <div className="md:flex md:px-[8%] px-4 md:my-24 my-14">
       <HeadingTitleText text="Why Choose Us?" cName="md:hidden mx-auto block" />
       <RevealInView
-        cName="md:w-[45%] rounded-xl border-t-8 border-r-8 border-greenbg overflow-hidden p-3"
+        cName="md:w-[45%] image-container p-3"
         variants={animateLeftVariants}
       >
         <img
@@ -35,7 +35,6 @@ export default function AboutSection() {
             websites that not only look stunning but
           </p>
         </RevealInView>
-
         <RevealInView
           cName="flex md:justify-start justify-between mt-6"
           variants={animateRightVariants}

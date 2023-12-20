@@ -14,8 +14,10 @@ export default function MainNavbar() {
           <li className="flex items-center">
             {link.sublinks ? (
               <div
-                className="flex items-center relative py-3 px-5"
+                className="flex items-center relative cursor-pointer py-3 px-5"
                 onClick={() => setIsOpen(!isOpen)}
+                onMouseEnter={() => setIsOpen(true)}
+                onMouseLeave={() => setIsOpen(false)}
               >
                 {link.text}
                 <FiChevronDown className="ml-2" />
@@ -61,21 +63,13 @@ function DropDownCard({ link }) {
         initial="initial"
         animate="animate"
         exit="exit"
-        className="flex absolute top-full left-0 origin-top w-[500px] bg-gray-50"
+        className="absolute top-full left-0 origin-top w-[max-content] bg-gray-50 text-gray-600"
       >
-        <div className="flex-1">
-          {link.sublinks.map((subl) => (
-            <div className="p-3">{subl.title}</div>
-          ))}
-        </div>
-        <div className="flex-1">
-          <img
-            src={
-              process.env.PUBLIC_URL + "/images/pexels-ali-pazani-2777898.jpg"
-            }
-            alt=""
-          />
-        </div>
+        {link.sublinks.map((subl) => (
+          <Link className="block px-5 py-3" to={subl.path}>
+            {subl.title}
+          </Link>
+        ))}
       </motion.div>
     </AnimatePresence>
   );

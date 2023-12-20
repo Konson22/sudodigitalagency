@@ -14,7 +14,7 @@ export default function Header() {
       {slogans.map((slogan, index) => (
         <motion.div
           key={index}
-          className={`md:h-[70vh] h-[40vh] flex items-center px-[10%] social-media ${slogan.bg} text-white`}
+          className={`curve md:h-[70vh] h-[40vh] flex items-center px-[10%] social-media ${slogan.bg} text-white`}
         >
           <div className="md:w-[70%] w-full text-left">
             <h2 className="md:text-5xl text-2xl">{slogan.text}</h2>

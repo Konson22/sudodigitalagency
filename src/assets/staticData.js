@@ -72,24 +72,44 @@ export const whyChooseUseData = [
 
 export const servicesData = [
     {
-        title:'Web Design',
-        text:''
-    },
-    {
-        title:'Mobile App development',
-        text:''
-    },
-    {
         title:'Digital Marketing',
-        text:''
+        text: "In the age of social connectivity, we'll help you make your mark. Our social media mavens craft personalized strategies to elevate your brand on platforms like Facebook, Instagram, Twitter, and LinkedIn. From content creation to community engagement, we've got the social side covered.",
+        image: process.env.PUBLIC_URL + "/images/social-media.png",
+        path: "/digital-marketing",
+        isAtLeft: false,
+    },
+    {
+        title: "Web & Mobile App development",
+        text: "Your online presence starts with a captivating website. Our developers blend creativity with technical proficiency to build websites that not only look stunning but also deliver seamless user experiences. Whether it's a corporate site, an e-commerce platform, or a portfolio, we've got the expertise to make it happen.",
+        image: process.env.PUBLIC_URL + "/images/ux.png",
+        path: "/web-design",
+        isAtLeft: true,
     },
     {
         title:'Custom App Development',
-        text:''
+        text: "A well-designed website is crucial for making a strong first impression and engaging your visitors. Our web design services focus on creating intuitive, responsive, and aesthetically pleasing websites that represent your brand's essence. Whether you need a simple informational site, an e-commerce platform, or a complex web application, we've got you covered.",
+        image: process.env.PUBLIC_URL + "/images/pexels-anna-nekrashevich-6802048.jpg",
+        path:'/custom-app-development'
     },
     {
-        title:'SEO & Content Writing',
-        text:''
+        title:'Domain and Hosting',
+        text: "Your digital journey starts with the right domain. Our experts guide you through the domain registration process, ensuring you find the perfect online identity. And when it comes to hosting, our reliable and secure services guarantee your website is always accessible to your audience.",
+        image: process.env.PUBLIC_URL + "/images/web.png",
+        path: "/domain-and-hosting",
+        isAtLeft: true,
+    },
+    {
+        title:'CCTV installation',
+        text: "Your digital journey starts with the right domain. Our experts guide you through the domain registration process, ensuring you find the perfect online identity. And when it comes to hosting, our reliable and secure services guarantee your website is always accessible to your audience.",
+        image: process.env.PUBLIC_URL + "/images/undraw_Surveillance_re_8tkl.png",
+        path: "/domain-and-hosting",
+        isAtLeft: true,
+    },
+    {
+        title:'Computer Gadgets',
+        path:'/mobile-app-development',
+        text: "Your digital journey starts with the right domain. Our experts guide you through the domain registration process, ensuring you find the perfect online identity. And when it comes to hosting, our reliable and secure services guarantee your website is always accessible to your audience.",
+        image: process.env.PUBLIC_URL + "/images/pexels-anna-nekrashevich-6802049.jpg",
     },
 ]
 
@@ -180,3 +200,33 @@ export const animateRightVariants = {
       transition
     },
 };
+
+
+const slogans = [
+    {
+        title:'Web Design and Development',
+        text1:"Designing Tomorrow, Developing Today.",
+        text2:"Where Ideas Take Flight: Web Design, Your Way."
+    },
+    {
+        title:'Custom App Development',
+        text1:"Apps Tailored to Your Vision, Code Crafted for Success.",
+        text2:"Innovation Unleashed: Your App, Your Rules."
+    },
+]
+
+/*
+
+
+3. **Digital Marketing:**
+   - "Elevate Your Brand, Expand Your Reach."
+   - "Digital Mastery, Marketing Excellence."
+
+4. **Mobile App Development:**
+   - "Apps that Move with Your Business."
+   - "Empowering Your Business, One App at a Time."
+
+5. **CCTV Installation:**
+   - "Watchful Eyes, Secure Business."
+   - "Securing Tomorrow, Today."
+*/
