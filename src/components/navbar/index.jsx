@@ -1,7 +1,7 @@
-import { FaFacebook, FaPhoneAlt, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import Logo from "./Logo";
 import MainNavbar from "./MainNavbar";
-import { FiBarChart2, FiMail, FiX } from "react-icons/fi";
+import { FiBarChart2, FiMail } from "react-icons/fi";
 import MobileNav from "./MobileNav";
 import { useState } from "react";
 
@@ -32,16 +32,16 @@ export default function Navbar() {
           Get a quotation
         </button>
         <span
-          className="text-2xl text-white ml-4"
+          className="text-2xl text-greenbg ml-4"
           onClick={sendWhatsAppMessage}
         >
           <FaWhatsapp />
         </span>
-        <span className="text-2xl text-white ml-4">
+        <span className="text-2xl text-greenbg mx-4">
           <FiMail />
         </span>
         <div
-          className="md:hidden block text-3xl -rotate-90"
+          className="md:hidden block text-3xl text-greenbg -rotate-90"
           onClick={() => setOpenMenu(!openMenu)}
         >
           <FiBarChart2 />

@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { servicesInfo } from "../../assets/data";
 import { HeadingText, HeadingText3 } from "../../util/HeadingText";
+import { RevealInView } from "../../components/RevealInView";
+import { animateTop } from "../../assets/animationVariants";
 
 export default function ServiceSection() {
   return (
@@ -8,8 +10,8 @@ export default function ServiceSection() {
       <HeadingText text="Services We Provide" />
       <div className="grid md:grid-cols-3 grid-cols-1 gap-6 mt-10">
         {servicesInfo.map((service) => (
-          <div className="bg-white p-6">
-            <div className="h-[200px] ww-[250px] mx-auto">
+          <RevealInView cName="bg-white p-6" variants={animateTop}>
+            <div className="md:h-[160px] ww-[250px] mx-auto">
               <img src={service.image} alt="" />
             </div>
             <div className="p-">
@@ -19,7 +21,7 @@ export default function ServiceSection() {
                 <Link to={service.path}>Learn more</Link>
               </button>
             </div>
-          </div>
+          </RevealInView>
         ))}
       </div>
     </div>

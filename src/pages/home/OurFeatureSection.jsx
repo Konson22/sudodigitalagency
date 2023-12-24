@@ -9,7 +9,7 @@ import { HeadingText, HeadingTitleText } from "../../util/HeadingText";
 export default function OurFeatureSection() {
   return (
     <div className=" md:flex items-center px-[8%] md:my-20 my-10">
-      <RevealInView cName="flex-1 md:mb-0 mb-10" variants={animateLeftVariants}>
+      <div className="flex-1 md:mb-0 mb-10">
         <HeadingTitleText text="Why Choose Us?" />
         <HeadingText
           text="The Best Decision For Your Business Strategy"
@@ -19,9 +19,14 @@ export default function OurFeatureSection() {
           In the age of social connectivity, we'll help you make your mark. Our
           social media mavens craft personalized
         </p>
+
         <div className="md:mr-20">
           {whyChooseUseData.map((info, index) => (
-            <li className="flex items-center mb-4" key={index}>
+            <RevealInView
+              cName="flex items-center mb-4"
+              variants={animateLeftVariants}
+              key={index}
+            >
               <span className="bg-greenbg text-white text-4xl p-3 rounded-xl mr-6">
                 {info.icon}
               </span>
@@ -29,10 +34,11 @@ export default function OurFeatureSection() {
                 <span className="text-2xl">{info.title}</span>
                 <p className="line-clamp-2">{info.text}</p>
               </div>
-            </li>
+            </RevealInView>
           ))}
         </div>
-      </RevealInView>
+      </div>
+      {/* </RevealInView> */}
       <RevealInView
         cName="md:w-[45%] image-container p-3 md:ml-14"
         variants={animateRightVariants}

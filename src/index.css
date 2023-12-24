@@ -35,6 +35,12 @@ img {
   color: #0096aa;
 }
 
+.header-container {
+  background-image: linear-gradient(rgba(28, 36, 49, 0.95), rgba(28, 36, 49, 0.95)), url('./assets/images/bg2.png');
+  background-size: cover;
+  background-position: center;
+}
+
 .image-container {
   position: relative;
 }
