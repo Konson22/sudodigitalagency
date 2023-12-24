@@ -1,4 +1,4 @@
-import { FaWhatsapp } from "react-icons/fa";
+import { FaFacebook, FaPhoneAlt, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import Logo from "./Logo";
 import MainNavbar from "./MainNavbar";
 import { FiBarChart2, FiMail, FiX } from "react-icons/fi";
@@ -28,10 +28,16 @@ export default function Navbar() {
       <MainNavbar />
       <MobileNav openMenu={openMenu} toggleMenu={toggleMenu} />
       <div className="flex items-center">
-        <span className="text-2xl text-greenbg" onClick={sendWhatsAppMessage}>
+        <button className="md:flex hidden bg-greenbg text-white px-5 py-2 rounded-sm">
+          Get a quotation
+        </button>
+        <span
+          className="text-2xl text-white ml-4"
+          onClick={sendWhatsAppMessage}
+        >
           <FaWhatsapp />
         </span>
-        <span className="text-2xl text-greenbg mx-4">
+        <span className="text-2xl text-white ml-4">
           <FiMail />
         </span>
         <div

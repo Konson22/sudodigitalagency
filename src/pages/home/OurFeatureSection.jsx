@@ -8,7 +8,7 @@ import { HeadingText, HeadingTitleText } from "../../util/HeadingText";
 
 export default function OurFeatureSection() {
   return (
-    <div className="md:flex px-[8%] md:my-20 my-10">
+    <div className=" md:flex items-center px-[8%] md:my-20 my-10">
       <RevealInView cName="flex-1 md:mb-0 mb-10" variants={animateLeftVariants}>
         <HeadingTitleText text="Why Choose Us?" />
         <HeadingText

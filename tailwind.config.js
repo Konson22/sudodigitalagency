@@ -7,10 +7,9 @@ module.exports = {
     extend: {
       colors:{
         darkbg:'rgb(28, 36, 49)',
-        greenbg:'rgb(14, 250, 116)',
+        greenbg:'#00dddd',
+        bluelight:'#00b4b4',
         bluebg:'#4F98CA',
-        yellowgreenbg:'#A7D129',
-        lightgreenbg:'#7FDA89',
       }
     },
   },

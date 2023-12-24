@@ -5,16 +5,16 @@ import { useInView } from "framer-motion";
 
 export default function AchivementSection() {
   return (
-    <div className="md:flex items-center bg-greenbg text-white md:px-[10%] px-4 md:py-16 py-8 md:mb-0 mb-14">
+    <div className="bg-bluelight text-white md:flex items-center md:px-[10%] px-4 md:py-16 py-8 md:mb-0 mb-14">
       <AchivementContent />
       <div className="flex-1 md:ml-10 md:text-left text-center">
         <HeadingTitleText
           text="ACHIVEMENTS"
-          cName="bg-white/50 text-gray-600 md:mx-0 mx-auto"
+          cName="bg-greenbg/20 text-white md:mx-0 mx-auto"
         />
         <HeadingText
           text="Some Of The Wards We Got"
-          cName="md:text-left text-center"
+          cName="md:text-left text-center text-black"
         />
         <p className="md:my-4 py-3">
           Your online presence starts with a captivating website. Our developers
