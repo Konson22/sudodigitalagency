@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import { FiX } from "react-icons/fi";
+import { FiChevronDown, FiX } from "react-icons/fi";
 import { navigationsLinksInfo } from "../../assets/data";
+import { useState } from "react";
 
 const menuVars = {
   initial: {
@@ -83,6 +84,8 @@ export default function MobileNav({ openMenu, toggleMenu }) {
 
 // mobile navb links
 const MobileNavLink = ({ link, toggleMenu }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
   const mobileLinkVars = {
     initial: {
       y: "80px",
@@ -101,9 +104,35 @@ const MobileNavLink = ({ link, toggleMenu }) => {
   };
   return (
     <motion.div variants={mobileLinkVars} className="uppercase ">
-      <Link className="" to={link.path} onClick={toggleMenu}>
-        {link.text}
-      </Link>
+      {link.sublinks ? (
+        <div>
+          <div className="flex items-center" onClick={() => setIsOpen(!isOpen)}>
+            {link.text}
+            <FiChevronDown
+              className={`text-xl ml-3 duration-300 ${
+                isOpen ? "rotate-180" : ""
+              }`}
+            />
+          </div>
+          {isOpen && (
+            <div className="">
+              {link.sublinks.map((subl) => (
+                <Link
+                  className="block px-3 py-3"
+                  to={subl.path}
+                  onClick={toggleMenu}
+                >
+                  {subl.title}
+                </Link>
+              ))}
+            </div>
+          )}
+        </div>
+      ) : (
+        <Link className="" to={link.path} onClick={toggleMenu}>
+          {link.text}
+        </Link>
+      )}
     </motion.div>
   );
 };

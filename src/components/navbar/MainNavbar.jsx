@@ -63,10 +63,13 @@ function DropDownCard({ link }) {
         initial="initial"
         animate="animate"
         exit="exit"
-        className="absolute top-full left-0 origin-top w-[max-content] bg-gray-50 text-gray-600"
+        className="absolute top-full left-0 origin-top w-[max-content] bg-gray-50 text-gray-600 py-3"
       >
         {link.sublinks.map((subl) => (
-          <Link className="block px-5 py-3" to={subl.path}>
+          <Link
+            className="block hover:bg-greenbg hover:text-white px-5 py-3"
+            to={subl.path}
+          >
             {subl.title}
           </Link>
         ))}

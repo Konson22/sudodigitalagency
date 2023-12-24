@@ -17,7 +17,7 @@ export default function ServiceSection() {
             <div className="p-">
               <HeadingText3 text={service.title} />
               <p className="line-clamp-5">{service.text}</p>
-              <button className="border border-greenbg text-greenbg px-6 py-2 text-xl block mt-5 mx-auto">
+              <button className="border border-greenbg rounded-2xl text-greenbg px-6 py-2 hover:bg-greenbg hover:text-white  md:text-xl block mt-5 mx-auto">
                 <Link to={service.path}>Learn more</Link>
               </button>
             </div>

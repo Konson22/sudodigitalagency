@@ -1,29 +1,16 @@
+import PageHeader from "../components/PageHeader";
 import { HeadingText2 } from "../util/HeadingText";
 
-export default function WebDevelopementPage() {
+export default function GraphicDesignPage() {
   return (
     <div>
-      <div
-        className="md:px-[15%] px-4 text-white md:py-32 py-8"
-        style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${
-            process.env.PUBLIC_URL +
-            "/images/christopher-gower-m_HRfLhgABo-unsplash.jpg"
-          })`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="md:w-[60%] text-whit">
-          <h1 className="md:text-6xl text-white text-3xl">
-            Designing <span className="text-greenbg">Dreams,</span> Building
-            <span className="text-greenbg"> Brands</span> & Your Identity.
-          </h1>
-          <button className="bg-greenbg px-5 py-3 mt-6 rounded-md md:text-xl">
-            Get Quotation
-          </button>
-        </div>
-      </div>
+      <PageHeader
+        title="Digital Marketing"
+        text="Designing Dreams, Building Brands & Your Identity."
+        image={process.env.PUBLIC_URL + "/images/graphic-design2.png"}
+        bg="bg-amber-500"
+      />
+
       <div className="bg-white md:mx-[15%] p-8">
         <p className="md:px-[15%]">
           Our web design services focus on creating intuitive, responsive, and
