@@ -1,42 +1,60 @@
 import { FaAward, FaCalendarDay } from "react-icons/fa";
-import { HeadingText, HeadingTitleText } from "../../util/HeadingText";
+import { HeadingText } from "../../util/HeadingText";
 import { useEffect, useRef, useState } from "react";
 import { useInView } from "framer-motion";
 
 export default function AchivementSection() {
   return (
-    <div className="bg-bluelight text-white md:flex items-center md:px-[10%] px-4 md:py-16 py-8 md:mb-0 mb-14">
-      <AchivementContent />
-      <div className="flex-1 md:ml-10 md:text-left text-center">
-        <HeadingTitleText
-          text="ACHIVEMENTS"
-          cName="bg-greenbg/20 text-white md:mx-0 mx-auto"
-        />
-        <HeadingText
-          text="Some Of The Wards We Got"
-          cName="md:text-left text-center text-black"
-        />
-        <p className="md:my-4 py-3">
-          Your online presence starts with a captivating website. Our developers
-          blend creativity with technical proficiency to build websites that not
-          only look stunning but
+    <div className="bg-darkbg text-white md:px-[10%] px-4 md:py-16 py-8">
+      <div className="text-center md:px-[20%]">
+        <HeadingText text="SUCCESS & ACHIVEMENTS" cName="text-center" />
+        <p>
+          Whether you're taking your first steps into the digital world or
+          looking to enhance your existing online strategies, Sudo Digital
+          Agency is here to guide you. Let's embark on a journey of digital
+          success together.
         </p>
-        {/* <Button text="Read More" /> */}
       </div>
-      <AchivementContent cName="md:hidden grid" />
+      <div
+        className={`grid md:grid-cols-4 grid-cols-2 md:gap-8 gap-4 flex-1 text-gray-700 md:mt-8 mt-6`}
+      >
+        {data.map((achivement, index) => (
+          <AchivementCard achivement={achivement} key={index} />
+        ))}
+      </div>
     </div>
+    // <div className="bg-darkbg text-white md:flex items-center md:px-[10%] px-4 md:py-16 py-8 md:mb-0 mb-14">
+    //   <AchivementContent />
+    //   <div className="flex-1 md:ml-10 md:text-left text-center">
+    //     <HeadingTitleText
+    //       text="ACHIVEMENTS"
+    //       cName="bg-greenbg/20 text-white md:mx-0 mx-auto"
+    //     />
+    //     <HeadingText
+    //       text="SUCCESS & ACHIVEMENTS"
+    //       cName="md:text-left text-center text-black"
+    //     />
+    //     <p className="md:my-4 py-3">
+    //       Your online presence starts with a captivating website. Our developers
+    //       blend creativity with technical proficiency to build websites that not
+    //       only look stunning but
+    //     </p>
+    //     {/* <Button text="Read More" /> */}
+    //   </div>
+    //   <AchivementContent cName="md:hidden grid" />
+    // </div>
   );
 }
 
-function AchivementContent({ cName = "md:grid hidden" }) {
-  return (
-    <div className={`${cName} grid-cols-2 md:gap-8 gap-4 flex-1 text-gray-700`}>
-      {data.map((achivement, index) => (
-        <AchivementCard achivement={achivement} key={index} />
-      ))}
-    </div>
-  );
-}
+// function AchivementContent({ cName = "md:grid hidden" }) {
+//   return (
+//     <div className={`grid grid-cols-4 md:gap-8 gap-4 flex-1 text-gray-700`}>
+//       {data.map((achivement, index) => (
+//         <AchivementCard achivement={achivement} key={index} />
+//       ))}
+//     </div>
+//   );
+// }
 
 function AchivementCard({ achivement }) {
   const [count, setCount] = useState(0);

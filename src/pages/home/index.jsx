@@ -9,8 +9,10 @@ import TestimonailSection from "./TestimonialSection";
 export default function HomePage() {
   return (
     <div>
-      <Header />
-      <AboutSection />
+      <div className="bg-greenbg">
+        <Header />
+        <AboutSection />
+      </div>
       <ServiceSection />
       <CallToActionSection />
       <OurFeatureSection />

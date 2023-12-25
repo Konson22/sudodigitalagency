@@ -3,10 +3,12 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { motion } from "framer-motion";
 import { servicesInfo } from "../../assets/data";
 import { animateHeader } from "../../assets/animationVariants";
+import { useContextApi } from "../../context-manager/ContextProvider";
+import { FiArrowRight } from "react-icons/fi";
 
 export default function Header() {
   return (
-    <div className="header-container bg-darkbg text-white">
+    <div className="header-container bg-darkbg text-white circle">
       <Carousel
         showThumbs={false}
         showStatus={false}
@@ -23,13 +25,19 @@ export default function Header() {
 }
 
 function HeaderCard({ slogan }) {
+  const { toggleModal } = useContextApi();
+
   const headerText = (cName) => {
     return (
       <div className={`md:flex-1 ${cName} md:text-left text-center`}>
         <h2 className="md:text-5xl text-2xl text-greenbg">{slogan.title}</h2>
         <p className="md:text-2xl text-2xl line-clamp-2">{slogan.slogan}</p>
-        <button className="border border-greenbg text-greenbg px-5 py-2 rounded mt-5 ml-auto">
+        <button
+          className="border border-greenbg text-greenbg md:text-xl flex items-center px-5 py-2 rounded mt-5 md:mx-0 mx-auto"
+          onClick={toggleModal}
+        >
           get started
+          <FiArrowRight className="ml-2" />
         </button>
       </div>
     );

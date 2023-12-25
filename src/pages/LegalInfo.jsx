@@ -2,7 +2,7 @@ import { HeadingText2 } from "../util/HeadingText";
 
 export default function LegalInfo() {
   return (
-    <div className="md:mx-[10%] p-5 bg-white">
+    <div className="md:mx-[20%] md:p-10 p-5 bg-white">
       <HeadingText2 text="LEGAL INFORMATION" cName="text-left" />
       {data.map((info) => (
         <div className="mb-5">

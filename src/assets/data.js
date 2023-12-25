@@ -33,7 +33,7 @@ export const servicesInfo = [
     {
         title:'Search Engine Optimization',
         text: "Elevate your online presence with our powerful SEO services. Our expert team optimizes your website for higher visibility and organic traffic. From strategic keyword placement to technical enhancements, we tailor our approach for lasting success in the competitive digital landscape. Choose excellence, choose results – choose our SEO services for a standout online presence.",
-        image: process.env.PUBLIC_URL + "/images/seo.png",
+        image: process.env.PUBLIC_URL + "/images/SEO-PNG-Transparent-HD-Photo.png",
         path:'/seo',
         slogan:"Unlocking Success in Every Search: SEO Mastery for Your Digital Triumph!.",
     },

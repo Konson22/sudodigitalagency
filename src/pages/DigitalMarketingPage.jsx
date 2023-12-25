@@ -11,7 +11,7 @@ export default function DigitalMarketingPage() {
         image={
           process.env.PUBLIC_URL + "/images/Digital-Marketing-PNG-File.png"
         }
-        bg="bg-amber-500"
+        bg="circle bg-amber-500"
       />
 
       <div className="bg-white md:mx-[15%] p-8">

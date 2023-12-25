@@ -1,11 +1,14 @@
-import { FaWhatsapp } from "react-icons/fa";
 import Logo from "./Logo";
 import MainNavbar from "./MainNavbar";
-import { FiBarChart2, FiMail } from "react-icons/fi";
+import { FiBarChart2 } from "react-icons/fi";
 import MobileNav from "./MobileNav";
 import { useState } from "react";
+import { useContextApi } from "../../context-manager/ContextProvider";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Navbar() {
+  const { toggleModal } = useContextApi();
+
   const [openMenu, setOpenMenu] = useState(false);
   const toggleMenu = () => {
     setOpenMenu(!openMenu);
@@ -28,18 +31,21 @@ export default function Navbar() {
       <MainNavbar />
       <MobileNav openMenu={openMenu} toggleMenu={toggleMenu} />
       <div className="flex items-center">
-        <button className="md:flex hidden bg-greenbg text-white px-5 py-2 rounded-sm">
-          Get a quotation
+        <button
+          className="flex bg-greenbg text-white md:px-5 px-3 md:py-2 py-1 rounded-sm"
+          onClick={toggleModal}
+        >
+          Contact us
         </button>
         <span
-          className="text-2xl text-greenbg ml-4"
+          className="text-2xl text-greenbg mx-4"
           onClick={sendWhatsAppMessage}
         >
           <FaWhatsapp />
         </span>
-        <span className="text-2xl text-greenbg mx-4">
+        {/* <span className="text-2xl text-greenbg mx-4">
           <FiMail />
-        </span>
+        </span> */}
         <div
           className="md:hidden block text-3xl text-greenbg -rotate-90"
           onClick={() => setOpenMenu(!openMenu)}
