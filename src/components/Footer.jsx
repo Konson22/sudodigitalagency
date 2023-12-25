@@ -2,6 +2,7 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import SocialMedia from "./SocialMedia";
 import { FiMail } from "react-icons/fi";
 import { servicesData } from "../assets/staticData";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -63,7 +64,9 @@ export default function Footer() {
             <li className="py-2">About us</li>
             <li className="py-2">Sudo Investors</li>
             <li className="py-2">Our Clients</li>
-            <li className="py-2">Legal Information</li>
+            <li className="py-2">
+              <Link to="/legal-info">Legal Information</Link>
+            </li>
             <li className="py-2">Portfolio</li>
             <li className="py-2">Terms & Conditions</li>
           </ul>

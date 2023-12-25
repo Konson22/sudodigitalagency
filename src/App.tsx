@@ -10,12 +10,13 @@ import GraphicDesignPage from "./pages/GraphicDesignPage";
 import MobileAppDevelopmentPage from "./pages/MobileAppDevelopmentPage";
 import SeoPage from "./pages/SeoPage";
 import CustomAppDevelopmentPage from "./pages/CustomAppDevelopmentPage";
+import LegalInfo from "./pages/LegalInfo";
 
 
 function App() {
 
   return (
-    <div className="bg-gray-100 md:text-base text-sm">
+    <div className="bg-gray-100 md:text-base">
       <ScrollToTop />
       <Navbar />
       <Routes>
@@ -24,6 +25,7 @@ function App() {
         <Route path='/web-design' element={<WebDesignPage />} />
         <Route path='/digital-marketing' element={<DigitalMarketingPage />} />
         <Route path='/graphic-design' element={<GraphicDesignPage />} />
+        <Route path='/legal-info' element={<LegalInfo />} />
         <Route path='/custom-app-development' element={<CustomAppDevelopmentPage />} />
         <Route path='/mobile-app-development' element={<MobileAppDevelopmentPage />} />
       </Routes>

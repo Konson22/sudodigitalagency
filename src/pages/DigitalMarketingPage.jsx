@@ -8,7 +8,9 @@ export default function DigitalMarketingPage() {
       <PageHeader
         title={servicesInfo[1].title}
         text={servicesInfo[1].slogan}
-        image={process.env.PUBLIC_URL + "/images/digital-marketing.png"}
+        image={
+          process.env.PUBLIC_URL + "/images/Digital-Marketing-PNG-File.png"
+        }
         bg="bg-amber-500"
       />
 

@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 export default function Logo() {
   return (
-    <div className="flex items-center">
+    <Link className="flex items-center" to="/">
       <img
         className="md:h-[3.5rem] h-[3rem] md:w-[3.5rem] w-[3rem]"
         src={process.env.PUBLIC_URL + "/images/logo.jpg"}
@@ -10,6 +12,6 @@ export default function Logo() {
         <span className="block md:text-xl text-greenbg">Sudo Digital</span>
         <p className="text-white text-sm text-right">Agency</p>
       </div>
-    </div>
+    </Link>
   );
 }

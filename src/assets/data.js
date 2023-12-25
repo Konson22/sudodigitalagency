@@ -11,7 +11,7 @@ export const servicesInfo = [
     {
         title:'Digital Marketing',
         text: "Navigate the digital landscape with confidence. Our digital marketing strategies are designed to boost your online visibility, attract the right audience, and drive measurable results. From SEO to social media, we've got your digital success covered.",
-        image: process.env.PUBLIC_URL + "/images/digital-marketing.png",
+        image: process.env.PUBLIC_URL + "/images/Digital-Marketing-PNG-Transparent-Picture.png",
         path: "/digital-marketing",
         slogan:"Elevate Your Brand, Expand Your Reach.",
     },
@@ -71,7 +71,7 @@ export const slogansInfo = [
         title:'Digital Marketing',
         text1:"Elevate Your Brand, Expand Your Reach.",
         text2:"Digital Mastery, Marketing Excellence.",
-        image:process.env.PUBLIC_URL+"/images/graphic-esign.png",
+        image:process.env.PUBLIC_URL+"/images/Digital-Marketing-PNG-Transparent-Picture.png",
     },
     {
         title:'Mobile App Development',

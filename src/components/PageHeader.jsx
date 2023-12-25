@@ -56,7 +56,7 @@ export default function PageHeader({ title, text, image, bg = "bg-greenbg" }) {
     >
       {imageContainer("md:hidden block mb-4")}
       <RevealInView
-        cName="md:w-[60%] md:text-left text-center"
+        cName="md:w-[50%] md:text-left text-center"
         variants={variants}
       >
         <h1 className="md:text-5xl text-3xl mb-2">{title}</h1>
