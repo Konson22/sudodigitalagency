@@ -1,6 +1,6 @@
 import Logo from "./Logo";
 import MainNavbar from "./MainNavbar";
-import { FiBarChart2 } from "react-icons/fi";
+import { FiBarChart2, FiMail } from "react-icons/fi";
 import MobileNav from "./MobileNav";
 import { useState } from "react";
 import { useContextApi } from "../../context-manager/ContextProvider";
@@ -32,10 +32,13 @@ export default function Navbar() {
       <MobileNav openMenu={openMenu} toggleMenu={toggleMenu} />
       <div className="flex items-center">
         <button
-          className="flex bg-greenbg text-white md:px-5 px-3 md:py-2 py-1 rounded-sm"
+          className="flex md:bg-greenbg md:text-white text-greenbg md:px-5 md:py-2 rounded-sm"
           onClick={toggleModal}
         >
-          Contact us
+          <span className="md:block hidden">Contact us</span>
+          <span className="text-2xl md:hidden block">
+            <FiMail />
+          </span>
         </button>
         <span
           className="text-2xl text-greenbg mx-4"

@@ -47,14 +47,17 @@ export default function QuotationForm({ toggleModal }) {
         exit="exit"
         className="origin-top fixed inset-0 z-50 backdrop-blur-md bg-black/10 flex items-center justify-center"
       >
-        <div className="md:w-[75%] w-[90%] flex bg-white rounded-md shadow-lg md:p-5 relative">
+        <div
+          className="md:w-[75%] w-[90%] flex bg-white rounded-md shadow-lg md:p5 relative"
+          ref={containerRef}
+        >
           <div
             className="absolute md:left-full left-[90%] bottom-full bg-white rounded-full p-2 z-50"
             onClick={toggleModal}
           >
             <FiX />
           </div>
-          <div className="md:block hidden flex-1">
+          <div className="md:block hidden flex-1 px-8 py-14">
             <img
               src={process.env.PUBLIC_URL + "/images/Web-Design-PNG-Photo.png"}
               alt=""
@@ -67,7 +70,7 @@ export default function QuotationForm({ toggleModal }) {
                 <input
                   type="text"
                   id="voice-search"
-                  className="cursor-pointer rounded-md bg-gray-100 w-full duration-300 border border-greenbg h-[3rem] px-4"
+                  className="cursor-pointer rounded-md md:bg-gray-100 bg-black/30 w-full duration-300 border border-white h-[3rem] px-4"
                   placeholder="Your Name"
                   required
                 ></input>
@@ -76,13 +79,13 @@ export default function QuotationForm({ toggleModal }) {
                 <input
                   type="text"
                   id="voice-search"
-                  className="cursor-pointer rounded-md bg-gray-100 w-full duration-300 border border-greenbg h-[3rem] px-4"
+                  className="cursor-pointer rounded-md md:bg-gray-100 bg-black/30 w-full duration-300 border border-white h-[3rem] px-4"
                   placeholder="E-mail address"
                   required
                 ></input>
               </div>
               <div className="mb-5">
-                <select className="cursor-pointer rounded-md bg-gray-100 w-full duration-300 border border-greenbg h-[3rem] px-4">
+                <select className="cursor-pointer rounded-md md:bg-gray-100 bg-black/30 w-full duration-300 border border-white h-[3rem] px-4">
                   <option value="">Choose Service</option>
                   {servicesInfo.map((s) => (
                     <option value={s.title}>{s.title}</option>
@@ -91,7 +94,7 @@ export default function QuotationForm({ toggleModal }) {
               </div>
               <div className="mb-5">
                 <textarea
-                  class="cursor-pointer rounded-md bg-gray-100 w-full duration-300 border border-greenbg h-[7rem] px-4"
+                  class="cursor-pointer rounded-md md:bg-gray-100 bg-black/30 w-full duration-300 border border-white h-[7rem] px-4"
                   placeholder="Write your thoughts here..."
                 ></textarea>
               </div>

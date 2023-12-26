@@ -1,34 +1,31 @@
+import { FaCheck } from "react-icons/fa";
 import {
   animateLeftVariants,
   animateRightVariants,
   whyChooseUseData,
 } from "../../assets/staticData";
 import { RevealInView } from "../../components/RevealInView";
-import { HeadingText, HeadingTitleText } from "../../util/HeadingText";
+import { HeadingTitleText } from "../../util/HeadingText";
 
 export default function OurFeatureSection() {
   return (
-    <div className=" md:flex items-center px-[8%] md:my-20 my-10">
+    <div className=" md:flex items-center md:px-[8%] px-4 md:my-20 my-10">
       <div className="flex-1 md:mb-0 mb-10">
         <HeadingTitleText text="Why Choose Us?" />
-        <HeadingText
+        {/* <HeadingText
           text="The Best Decision For Your Business Strategy"
           cName="text-left"
-        />
-        <p className="my-5">
-          In the age of social connectivity, we'll help you make your mark. Our
-          social media mavens craft personalized
-        </p>
+        /> */}
 
         <div className="md:mr-20">
           {whyChooseUseData.map((info, index) => (
             <RevealInView
-              cName="flex items-center mb-4"
+              cName="flex items-cente mb-4"
               variants={animateLeftVariants}
               key={index}
             >
-              <span className="bg-greenbg text-white text-4xl p-3 rounded-xl mr-6">
-                {info.icon}
+              <span className="md:h-10  md:w-10 h-10  w-10  flex items-center justify-center border border-greenbg text-greenbg md:text-2xl text-xl rounded-full mr-6">
+                <FaCheck />
               </span>
               <div className="flex-1">
                 <span className="text-2xl">{info.title}</span>
@@ -37,18 +34,22 @@ export default function OurFeatureSection() {
             </RevealInView>
           ))}
         </div>
+        <p className="my-5">
+          Choose Sudo Digital as your digital partner, and let's embark on a
+          journey to elevate your brand in the digital sphere. Immerse yourself
+          in creativity, functionality, and success with a team that is
+          dedicated to turning your digital dreams into reality. Your brand's
+          digital evolution starts here!
+        </p>
       </div>
       {/* </RevealInView> */}
       <RevealInView
-        cName="md:w-[45%] image-container p-3 md:ml-14"
+        cName="md:w-[45%] image-container h-full p-3 md:ml-14"
         variants={animateRightVariants}
       >
         <img
           className="rounded-xl"
-          src={
-            process.env.PUBLIC_URL +
-            "/images/pexels-oladimeji-ajegbile-3314294.jpg"
-          }
+          src={process.env.PUBLIC_URL + "/images/bush3.jpeg"}
           alt=""
         />
       </RevealInView>

@@ -46,13 +46,13 @@ const variants2 = {
 
 export default function PageHeader({ title, text, image, bg = "bg-greenbg" }) {
   const imageContainer = (cName) => (
-    <RevealInView cName={`md:h-[80%] flex-1 ${cName}`} variants={variants2}>
+    <RevealInView cName={`md:h-full h-[250px] ${cName}`} variants={variants2}>
       <img src={image} alt="" />
     </RevealInView>
   );
   return (
     <div
-      className={`md:h-[65vh] md:flex items-center md:px-[10%] px-6 py-8 ${bg} text-white`}
+      className={`md:h-[60vh] h-auto md:flex items-center md:px-[10%] px-6 md:py-16 py-8 ${bg} text-white`}
     >
       {imageContainer("md:hidden block mb-4")}
       <RevealInView
@@ -69,3 +69,28 @@ export default function PageHeader({ title, text, image, bg = "bg-greenbg" }) {
     </div>
   );
 }
+// export default function PageHeader({ title, text, image, bg = "bg-greenbg" }) {
+//   const imageContainer = (cName) => (
+//     <RevealInView cName={`md:h-[80%] flex-1 ${cName}`} variants={variants2}>
+//       <img src={image} alt="" />
+//     </RevealInView>
+//   );
+//   return (
+//     <div
+//       className={`md:h-[65vh] md:flex items-center md:px-[10%] px-6 py-8 ${bg} text-white`}
+//     >
+//       {imageContainer("md:hidden block mb-4")}
+//       <RevealInView
+//         cName="md:w-[50%] md:text-left text-center"
+//         variants={variants}
+//       >
+//         <h1 className="md:text-5xl text-3xl mb-2">{title}</h1>
+//         <span className="block md:text-3xl text-xl">{text}</span>
+//         <button className="border px-5 py-3 mt-6 rounded-md md:text-xl">
+//           Get Quotation
+//         </button>
+//       </RevealInView>
+//       {imageContainer("md:block hidden")}
+//     </div>
+//   );
+// }

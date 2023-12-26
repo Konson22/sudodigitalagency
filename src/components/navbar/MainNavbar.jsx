@@ -57,7 +57,7 @@ function DropDownCard({ link }) {
     },
   };
   return (
-    <AnimatePresence>
+    <AnimatePresence mode="wait" initial={false}>
       <motion.div
         variants={menuVars}
         initial="initial"

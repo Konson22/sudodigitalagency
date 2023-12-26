@@ -44,7 +44,7 @@ function HeaderCard({ slogan }) {
   };
   return (
     <motion.div
-      className="md:h-[70vh] h-[45vh] flex md:flex-row flex-col md:items-center justify-evenly px-[8%] md:py-0 py-16"
+      className="md:h-[70vh] h-[45vh] flex md:flex-row flex-col md:items-center justify-evenly px-[8%] md:pt-0 pt-16 md:pb-0 pb-20"
       variants={animateHeader}
       initial="initial"
       animate="animate"

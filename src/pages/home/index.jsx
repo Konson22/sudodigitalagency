@@ -4,7 +4,9 @@ import CallToActionSection from "./CallToActionSection";
 import Header from "./Header";
 import OurFeatureSection from "./OurFeatureSection";
 import ServiceSection from "./ServiceSection";
+import TeamSection from "./TeamSection";
 import TestimonailSection from "./TestimonialSection";
+import WebDesignCallToActionSection from "./WebDesignCallToActionSection";
 
 export default function HomePage() {
   return (
@@ -15,7 +17,9 @@ export default function HomePage() {
       </div>
       <ServiceSection />
       <CallToActionSection />
+      <WebDesignCallToActionSection />
       <OurFeatureSection />
+      <TeamSection />
       <AchivementSection />
       <TestimonailSection />
     </div>
