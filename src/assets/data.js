@@ -49,8 +49,9 @@ export const servicesInfo = [
 export const navigationsLinksInfo = [
     { text: "Home", path: "/" },
     { text: "Services", path: "/", sublinks: servicesInfo },
-    { text: "About", path: "/" },
+    { text: "About", path: "/about" },
     { text: "Contacts", path: "/" },
+    { text: "Our Blog", path: "/blog" },
 ];
 
 

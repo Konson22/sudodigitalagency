@@ -1,10 +1,9 @@
+import OurTeam from "../../components/OurTeam";
 import AboutSection from "./AboutSection";
-import AchivementSection from "./AchivementSection";
 import CallToActionSection from "./CallToActionSection";
 import Header from "./Header";
 import OurFeatureSection from "./OurFeatureSection";
 import ServiceSection from "./ServiceSection";
-import TeamSection from "./TeamSection";
 import TestimonailSection from "./TestimonialSection";
 import WebDesignCallToActionSection from "./WebDesignCallToActionSection";
 
@@ -19,8 +18,9 @@ export default function HomePage() {
       <CallToActionSection />
       <WebDesignCallToActionSection />
       <OurFeatureSection />
-      <TeamSection />
-      <AchivementSection />
+      <div className="px-[8%]">
+        <OurTeam />
+      </div>
       <TestimonailSection />
     </div>
   );

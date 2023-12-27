@@ -14,8 +14,8 @@ export default function ServiceSection() {
             <div className="md:h-[160px] ww-[250px] mx-auto">
               <img src={service.image} alt="" />
             </div>
-            <div className="p-">
-              <HeadingText3 text={service.title} />
+            <div className="md:mt-4">
+              <HeadingText3 text={service.title} cName="text-left" />
               <p className="line-clamp-5">{service.text}</p>
               <button className="border border-greenbg rounded-2xl text-greenbg px-6 py-2 hover:bg-greenbg hover:text-white  md:text-xl block mt-5 mx-auto">
                 <Link to={service.path}>Learn more</Link>

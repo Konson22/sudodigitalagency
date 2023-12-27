@@ -18,7 +18,7 @@
 body {
   scroll-behavior: smooth;
   background-color: rgb(247, 244, 244);
-  color: rgb(94, 94, 94);
+  color: rgb(134, 134, 134);
   font-family: 'Kodchasan';
 }
 
@@ -26,7 +26,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Kodchasan-Bold';
+  color: rgb(112, 112, 112);
 }
 
 img {
@@ -41,9 +41,11 @@ img {
   background-position: center;
 }
 
+.heading-border,
 .image-container {
   position: relative;
 }
+
 
 .image-container::after {
   content: '';
@@ -68,7 +70,11 @@ img {
 }
 
 .circle {
-  clip-path: ellipse(100% 100% at 50% 0);
+  clip-path: ellipse(120% 100% at 50% 0);
+}
+
+.contact-circle {
+  clip-path: ellipse(140% 100% at 50% 0);
 }
 
 .elipe {
@@ -86,6 +92,18 @@ img {
     background-image: linear-gradient(rgba(0, 221, 221, 0.7), rgba(0, 221, 221, 0.7)), url('./assets/images/Web-Design-PNG-Photo.png');
     background-size: cover;
     background-position: left;
+  }
+
+  .circle {
+    clip-path: ellipse(160% 100% at 50% 0);
+  }
+
+  .circle {
+    clip-path: ellipse(160% 100% at 50% 0);
+  }
+
+  .contact-circle {
+    clip-path: ellipse(180% 100% at 50% 0);
   }
 
 }
