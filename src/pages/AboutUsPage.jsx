@@ -6,7 +6,7 @@ export default function AboutUsPage() {
     <div className="md:mx-[20%] md:bg-white  md:p-14 p-4">
       {/* INTRODUCTION SECTION */}
       <div className="">
-        <h3 className="md:text-6xl text-3xl md:mr-8">ABOUT US</h3>
+        <h3 className="md:text-3xl text-2xl md:mr-8">ABOUT US</h3>
         <p>
           At Sudo Digital Agency, we are more than just a tech company; we are
           your dedicated partner in navigating the dynamic and ever-evolving

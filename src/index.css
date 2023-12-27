@@ -103,7 +103,7 @@ img {
   }
 
   .contact-circle {
-    clip-path: ellipse(180% 100% at 50% 0);
+    clip-path: ellipse(210% 100% at 50% 0);
   }
 
 }

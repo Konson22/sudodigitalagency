@@ -59,7 +59,7 @@ export default function PageHeader({ title, text, image, bg = "bg-greenbg" }) {
         cName="md:w-[50%] md:text-left text-center"
         variants={variants}
       >
-        <h1 className="md:text-5xl text-3xl mb-2">{title}</h1>
+        <h1 className="md:text-5xl text-3xl text-white mb-2">{title}</h1>
         <span className="block md:text-3xl text-xl">{text}</span>
         <button className="border px-5 py-3 mt-6 rounded-md md:text-xl">
           Get Quotation
